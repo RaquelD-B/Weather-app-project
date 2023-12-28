@@ -6,3 +6,60 @@
   margin: 50px auto;
   padding: 20px 10px;
 }
+.city-Input {
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 25px;
+  width: 300px;
+  margin: 0 auto 0 10px;
+  padding: 10px;
+  text-align: center;
+}
+.search-Button {
+  background-color: rgba(255, 204, 0, 0.9);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+form {
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h2 {
+  text-align: right;
+  position: relative;
+  bottom: 130px;
+  margin-left: 350px;
+}
+.h2-subtitle {
+  position: relative;
+  text-align: right;
+  bottom: 120px;
+}
+.currentdate {
+  text-align: right;
+  position: relative;
+  bottom: 120px;
+}
+.weatherComment {
+  position: relative;
+  text-align: right;
+  bottom: 120px;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
