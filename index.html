@@ -3,82 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <input type="text" placeholder="Type a city..." required />
-      <input type="submit" value="Search" />
-    </header>
-    <main>
-      <h1>
-        <span class="currentTemperatureEmoji">☀️</span
-        ><span class="currentTemperature">26°C |°F</span>
-      </h1>
-      <div class="rainfallDetails">
-        Rainfall probability: <span class="rainfallProbability">0%</span>
-      </div>
-      <div class="humidityDetails">
-        Humidiy: <span class="humidityPercentage">70%</span>
-      </div>
-      <div class="windDetails">
-        Wind: <span class="windSpeed">14 km/h</span>
-      </div>
-      <h2>ASUNCIÓN</h2>
-      <div>Weather for today</div>
-      <div class="currentdate">Thursday Dec, 28</div>
-      <div class="weatherComment">Partly cloudy</div>
-      <h3>Extended Weather Forecast</h3>
-      <ul>
-        <li>
-          <span class="day">Thu</span> <span class="forecast emoji">⛅</span>
-          <span class="maxTempertature"> <strong>36°</strong></span>
-          <span class="minTemperature">.26°</span>
-        </li>
-        <li>
-          <span class="day">Fri</span> <span class="forecast emoji">⛅</span>
-          <span class="maxTempertature"> <strong>36°</strong></span>
-          <span class="minTemperature">.26°</span>
-        </li>
-        <li>
-          <span class="day">Sat</span> <span class="forecast emoji">⛅</span>
-          <span class="maxTempertature"> <strong>36°</strong></span>
-          <span class="minTemperature">.26°</span>
-        </li>
-        <li>
-          <span class="day">Sun</span> <span class="forecast emoji">⛅</span>
-          <span class="maxTempertature"> <strong>36°</strong></span>
-          <span class="minTemperature">.26°</span>
-        </li>
-        <li>
-          <span class="day">Mon</span> <span class="forecast emoji">⛅</span>
-          <span class="maxTempertature"> <strong>36°</strong></span>
-          <span class="minTemperature">.26°</span>
-        </li>
-        <li>
-          <span class="day">Tue</span> <span class="forecast emoji">⛅</span>
-          <span class="maxTempertature"> <strong>36°</strong></span>
-          <span class="minTemperature">.26°</span>
-        </li>
-        <li>
-          <span class="day">Wed</span> <span class="forecast emoji">⛅</span>
-          <span class="maxTempertature"> <strong>36°</strong></span>
-          <span class="minTemperature">.26°</span>
-        </li>
-        <li>
-          <span class="day">Thu</span> <span class="forecast emoji">⛅</span>
-          <span class="maxTempertature"> <strong>36°</strong></span>
-          <span class="minTemperature">.26°</span>
-        </li>
-      </ul>
-    </main>
-    <footer>
-      <p>
-        This project was coded by
-        <a href="#" target="_blank">Raquel Diaz</a> and is on
-        <a href="#" target="_blank">Github</a> and is hosted on
-        <a href="#" target="_blank">Netlify</a>
-      </p>
-    </footer>
+    <div class="weatherApp">
+      <header>
+        <input type="text" placeholder="Type a city..." required />
+        <input type="submit" value="Search" />
+      </header>
+      <main>
+        <h1>
+          <span class="currentTemperatureEmoji">☀️</span
+          ><span class="currentTemperature">26°C |°F</span>
+        </h1>
+        <div class="rainfallDetails">
+          Rainfall probability: <span class="rainfallProbability">0%</span>
+        </div>
+        <div class="humidityDetails">
+          Humidiy: <span class="humidityPercentage">70%</span>
+        </div>
+        <div class="windDetails">
+          Wind: <span class="windSpeed">14 km/h</span>
+        </div>
+        <h2>ASUNCIÓN</h2>
+        <div>Weather for today</div>
+        <div class="currentdate">Thursday Dec, 28</div>
+        <div class="weatherComment">Partly cloudy</div>
+        <h3>Extended Weather Forecast</h3>
+        <ul>
+          <li>
+            <span class="day">Thu</span> <span class="forecast emoji">⛅</span>
+            <span class="maxTempertature"> <strong>36°</strong></span>
+            <span class="minTemperature">.26°</span>
+          </li>
+          <li>
+            <span class="day">Fri</span> <span class="forecast emoji">⛅</span>
+            <span class="maxTempertature"> <strong>36°</strong></span>
+            <span class="minTemperature">.26°</span>
+          </li>
+          <li>
+            <span class="day">Sat</span> <span class="forecast emoji">⛅</span>
+            <span class="maxTempertature"> <strong>36°</strong></span>
+            <span class="minTemperature">.26°</span>
+          </li>
+          <li>
+            <span class="day">Sun</span> <span class="forecast emoji">⛅</span>
+            <span class="maxTempertature"> <strong>36°</strong></span>
+            <span class="minTemperature">.26°</span>
+          </li>
+          <li>
+            <span class="day">Mon</span> <span class="forecast emoji">⛅</span>
+            <span class="maxTempertature"> <strong>36°</strong></span>
+            <span class="minTemperature">.26°</span>
+          </li>
+          <li>
+            <span class="day">Tue</span> <span class="forecast emoji">⛅</span>
+            <span class="maxTempertature"> <strong>36°</strong></span>
+            <span class="minTemperature">.26°</span>
+          </li>
+          <li>
+            <span class="day">Wed</span> <span class="forecast emoji">⛅</span>
+            <span class="maxTempertature"> <strong>36°</strong></span>
+            <span class="minTemperature">.26°</span>
+          </li>
+          <li>
+            <span class="day">Thu</span> <span class="forecast emoji">⛅</span>
+            <span class="maxTempertature"> <strong>36°</strong></span>
+            <span class="minTemperature">.26°</span>
+          </li>
+        </ul>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Raquel Diaz</a> and is on
+          <a href="#" target="_blank">Github</a> and is hosted on
+          <a href="#" target="_blank">Netlify</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

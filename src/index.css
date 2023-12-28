@@ -1,0 +1,8 @@
+.weatherApp {
+  background-color: rgba(255, 245, 204, 0.8);
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px 10px;
+}
