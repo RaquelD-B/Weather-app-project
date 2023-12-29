@@ -43,26 +43,32 @@ form {
   position: relative;
   top: -50px;
 }
-
+.breakOne {
+  display: flex;
+  position: relative;
+  bottom: 80px;
+}
 h3 {
   display: flex;
-  position: fixed;
-  top: 270px;
-  right: 500px;
+  position: relative;
+  bottom: 80px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 ul {
   list-style: none;
   display: flex;
+  position: fixed;
+  bottom: 150px;
   flex-direction: row;
-
   list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
   text-align: center;
+  padding: 0;
+  margin: 0 auto;
 }
 li {
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 7px;
 }
 .day {
@@ -80,4 +86,5 @@ li {
 footer {
   font-size: 13px;
   text-align: center;
+  color: gray;
 }
