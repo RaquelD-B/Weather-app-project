@@ -33,23 +33,7 @@ form {
   margin-right: 20px;
 }
 
-h2 {
-  text-align: right;
-  position: relative;
-  bottom: 130px;
-  margin-left: 350px;
-}
-.h2-subtitle {
-  position: relative;
-  text-align: right;
-  bottom: 120px;
-}
-.currentdate {
-  text-align: right;
-  position: relative;
-  bottom: 120px;
-}
-.weatherComment {
+.weather-forecast-main-section {
   position: relative;
   text-align: right;
   bottom: 120px;
