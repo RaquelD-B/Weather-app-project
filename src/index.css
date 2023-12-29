@@ -38,19 +38,46 @@ form {
   text-align: right;
   bottom: 120px;
 }
+.extended-forecast {
+  display: flex;
+  position: relative;
+  top: -50px;
+}
+
+h3 {
+  display: flex;
+  position: fixed;
+  top: 270px;
+  right: 500px;
+}
 
 ul {
   list-style: none;
   display: flex;
   flex-direction: row;
+
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  text-align: center;
 }
 li {
   justify-content: space-between;
-  margin: 0 5px;
+  margin: 0 7px;
+}
+.day {
+  font-style: italic;
+  font-weight: bold;
 }
 .forecast-emoji {
   display: block;
+  text-align: center;
+}
+.maxTempertature,
+.minTemperature {
+  font-size: 13px;
+}
+footer {
+  font-size: 13px;
+  text-align: center;
 }
