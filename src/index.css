@@ -51,3 +51,6 @@ li {
   justify-content: space-between;
   margin: 0 5px;
 }
+.forecast-emoji {
+  display: block;
+}
