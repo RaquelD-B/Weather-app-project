@@ -15,8 +15,13 @@
   <body>
     <div class="weatherApp">
       <header>
-        <form class="citySearch">
-          <input type="text" placeholder="Type a city..." class="city-Input" />
+        <form class="citySearch" id="city-search-form">
+          <input
+            type="text"
+            placeholder="Type a city..."
+            class="city-Input"
+            id="city-Input"
+          />
           <input type="submit" value="Search" class="search-Button" />
         </form>
       </header>
@@ -37,7 +42,7 @@
           </div>
         </div>
         <div class="weather-forecast-main-section">
-          <h2>ASUNCIÓN</h2>
+          <h2 id="city">ASUNCIÓN</h2>
           <div class="h2-subtitle">Weather for today</div>
           <div class="currentdate">Thursday Dec, 28</div>
           <div class="weatherComment">Partly cloudy</div>
@@ -115,5 +120,6 @@
         </p>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
