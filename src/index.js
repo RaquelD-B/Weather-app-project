@@ -1,3 +1,13 @@
+function updateHour() {
+  let today = new Date();
+  let hour = today.getHours();
+  let minutes = today.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let timeInfo = document.querySelector("#hour");
+  timeInfo.innerHTML = `${hour}:${minutes}`;
+}
 function updateDate() {
   let today = new Date();
   let date = today.getDate();
@@ -35,6 +45,7 @@ function updateWeatherData(response) {
   let windElement = document.querySelector("#windSpeed");
   windElement.innerHTML = response.data.wind.speed;
   updateDate();
+  updateHour();
 }
 function showTemperature(city) {
   let apiKey = "adf0eeed55ed6d4256b9b3ft0e49cc9o";
