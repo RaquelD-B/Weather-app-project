@@ -42,6 +42,7 @@ form {
   display: flex;
   position: relative;
   top: -50px;
+  margin-left: 45px;
 }
 .breakOne {
   display: flex;
@@ -60,27 +61,34 @@ ul {
   list-style: none;
   display: flex;
   position: fixed;
-  bottom: 150px;
-  flex-direction: row;
-  list-style-type: none;
+  justify-content: space-between;
+  top: 300px;
   text-align: center;
   padding: 0;
-  margin: 0 auto;
 }
-li {
-  justify-content: space-around;
-  margin: 0 7px;
+
+li:first-child {
+  display: flex;
+  position: absolute;
+  list-style: none;
 }
 .day {
+  display: block;
   font-style: italic;
   font-weight: bold;
+  margin: 0 12px;
 }
-.forecast-emoji {
-  display: block;
-  text-align: center;
+#forecast-emoji {
+  display: flex;
+  position: relative;
+  bottom: 170px;
+  left: 300px;
+  width: 80px;
+  height: 80px;
 }
 .maxTempertature,
 .minTemperature {
+  display: block;
   font-size: 13px;
 }
 footer {
