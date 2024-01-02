@@ -44,6 +44,9 @@ function updateWeatherData(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   let windElement = document.querySelector("#windSpeed");
   windElement.innerHTML = response.data.wind.speed;
+  let iconElement = document.querySelector("#forecast-emoji");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="weatherIcon">`;
+
   updateDate();
   updateHour();
 }
