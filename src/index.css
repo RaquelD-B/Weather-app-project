@@ -4,7 +4,7 @@
   font-family: "Raleway", sans-serif;
   max-width: 500px;
   margin: 50px auto;
-  padding: 20px 10px;
+  padding: 50px 10px;
 }
 .city-Input {
   border: none;
@@ -32,64 +32,41 @@ form {
   margin-left: 20px;
   margin-right: 20px;
 }
-
+#today-details-container {
+  display: block;
+}
+.currentTemperature {
+  display: inline;
+  margin-left: 60px;
+  font-size: 30px;
+}
+#forecast-icon {
+  position: relative;
+  left: -10px;
+  top: -10px;
+  width: 80px;
+  height: 80px;
+}
+#forecast-emoji {
+  position: absolute;
+}
+h2 {
+  font-size: 30px;
+}
 .weather-forecast-main-section {
   position: relative;
   text-align: right;
   bottom: 120px;
 }
-.extended-forecast {
-  display: flex;
-  position: relative;
-  top: -50px;
-  margin-left: 45px;
-}
-.breakOne {
-  display: flex;
-  position: relative;
-  bottom: 80px;
-}
 h3 {
-  display: flex;
-  position: relative;
-  bottom: 80px;
   text-align: center;
-  margin: 0 auto;
 }
-
-ul {
+ul.forecast {
   list-style: none;
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  top: 300px;
-  text-align: center;
   padding: 0;
-}
-
-li:first-child {
   display: flex;
-  position: absolute;
-  list-style: none;
-}
-.day {
-  display: block;
-  font-style: italic;
-  font-weight: bold;
-  margin: 0 12px;
-}
-#forecast-emoji {
-  display: flex;
-  position: relative;
-  bottom: 170px;
-  left: 300px;
-  width: 80px;
-  height: 80px;
-}
-.maxTempertature,
-.minTemperature {
-  display: block;
-  font-size: 13px;
+  position: static;
+  justify-content: space-between;
 }
 footer {
   text-align: center;

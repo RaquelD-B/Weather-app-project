@@ -45,7 +45,7 @@ function updateWeatherData(response) {
   let windElement = document.querySelector("#windSpeed");
   windElement.innerHTML = response.data.wind.speed;
   let iconElement = document.querySelector("#forecast-emoji");
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="weatherIcon">`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="weatherIcon" id="forecast-icon">`;
 
   updateDate();
   updateHour();

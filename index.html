@@ -27,11 +27,11 @@
         </form>
       </header>
       <main>
-        <div>
+        <div id="today-details-container">
           <h1>
-            <span class="currentTemperatureEmoji">☀️</span
-            ><span class="currentTemperature" id="currentTemperature"></span>
-            <span>°C |</span> <a href="#">°F</a>
+            <div id="forecast-emoji"></div>
+            <span class="currentTemperature" id="currentTemperature"></span>
+            <span>°C </span>| <span><a href="#">°F</a></span>
           </h1>
           <div class="humidityDetails">
             Humidity: <span id="humidity"></span><span>%, </span>
@@ -44,6 +44,7 @@
         <br />
         <div class="weather-forecast-main-section">
           <h2 id="city"></h2>
+
           <div class="h2-subtitle">Weather for today</div>
           <div id="currentdate"></div>
           <div id="hour"></div>
@@ -51,49 +52,54 @@
         <hr class="breakOne" />
         <div class="extended-forecast">
           <h3>Extended Weather Forecast</h3>
-          <ul>
-            <li></li>
+          <ul class="forecast">
             <li>
               <span class="day">Fri</span>
-              <span class="forecast-emoji">⛅</span>
-              <span class="maxTempertature"> <strong>36°</strong></span>
-              <span class="minTemperature">.26°</span>
+              <div class="forecast-emoji">⛅</div>
+              <div>
+                <span class="maxTempertature"> <strong>36°</strong></span>
+                <span class="minTemperature">.26°</span>
+              </div>
             </li>
             <li>
-              <span class="day">Sat</span>
-              <span class="forecast-emoji">⛅</span>
-              <span class="maxTempertature"> <strong>36°</strong></span>
-              <span class="minTemperature">.26°</span>
+              <span class="day">Fri</span>
+              <div class="forecast-emoji">⛅</div>
+              <div>
+                <span class="maxTempertature"> <strong>36°</strong></span>
+                <span class="minTemperature">.26°</span>
+              </div>
             </li>
             <li>
-              <span class="day">Sun</span>
-              <span class="forecast-emoji">⛅</span>
-              <span class="maxTempertature"> <strong>36°</strong></span>
-              <span class="minTemperature">.26°</span>
+              <span class="day">Fri</span>
+              <div class="forecast-emoji">⛅</div>
+              <div>
+                <span class="maxTempertature"> <strong>36°</strong></span>
+                <span class="minTemperature">.26°</span>
+              </div>
             </li>
             <li>
-              <span class="day">Mon</span>
-              <span class="forecast-emoji">⛅</span>
-              <span class="maxTempertature"> <strong>36°</strong></span>
-              <span class="minTemperature">.26°</span>
+              <span class="day">Fri</span>
+              <div class="forecast-emoji">⛅</div>
+              <div>
+                <span class="maxTempertature"> <strong>36°</strong></span>
+                <span class="minTemperature">.26°</span>
+              </div>
             </li>
             <li>
-              <span class="day">Tue</span>
-              <span class="forecast-emoji">⛅</span>
-              <span class="maxTempertature"> <strong>36°</strong></span>
-              <span class="minTemperature">.26°</span>
+              <span class="day">Fri</span>
+              <div class="forecast-emoji">⛅</div>
+              <div>
+                <span class="maxTempertature"> <strong>36°</strong></span>
+                <span class="minTemperature">.26°</span>
+              </div>
             </li>
             <li>
-              <span class="day">Wed</span>
-              <span class="forecast-emoji">⛅</span>
-              <span class="maxTempertature"> <strong>36°</strong></span>
-              <span class="minTemperature">.26°</span>
-            </li>
-            <li>
-              <span class="day">Thu</span>
-              <span class="forecast-emoji">⛅</span>
-              <span class="maxTempertature"> <strong>36°</strong></span>
-              <span class="minTemperature">.26°</span>
+              <span class="day">Fri</span>
+              <div class="forecast-emoji">⛅</div>
+              <div>
+                <span class="maxTempertature"> <strong>36°</strong></span>
+                <span class="minTemperature">.26°</span>
+              </div>
             </li>
           </ul>
         </div>
