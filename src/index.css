@@ -59,6 +59,16 @@ form {
   position: relative;
   top: -125px;
 }
+hr {
+  display: flex;
+  position: static;
+}
+.extended-forecast-wrapper {
+  display: flex;
+  position: relative;
+  bottom: 100px;
+  flex-direction: column;
+}
 
 h3 {
   text-align: center;
