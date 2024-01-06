@@ -53,11 +53,6 @@ form {
   right: 8px;
 }
 
-hr {
-  display: flex;
-  position: relative;
-  top: -65px;
-}
 .weather-forecast-main-section {
   display: block;
   text-align: right;
@@ -67,19 +62,18 @@ hr {
 
 h3 {
   text-align: center;
-  display: relative;
-  display: flex;
-  position: relative;
-  top: -70px;
 }
-ul.forecast {
-  list-style: none;
-  padding: 0;
+
+.extended-forecast-container {
   display: flex;
-  position: relative;
-  justify-content: space-between;
-  bottom: 80px;
+  justify-content: space-around;
 }
+
+.extended-forecast-row {
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   text-align: center;
   color: gray;

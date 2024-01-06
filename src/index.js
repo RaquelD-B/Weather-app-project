@@ -53,8 +53,27 @@ function searchCity(event) {
   let cityInput = document.querySelector("#city-Input");
   showTemperature(cityInput.value);
 }
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="extended-forecast-row">
+          <div class="day">${day} </div>
+          <div class="forecast-icon">🌧️</div>
+          <div class="extended-forecast-temperature">
+            <span class="max-temperature"> <strong>19°</strong></span>
+            <span class="min-temperature">9°</span>
+          </div>
+        </div>`;
+  });
+  let forecastElement = document.querySelector(".extended-forecast-container");
+  forecastElement.innerHTML = forecastHtml;
+}
 
 let cityElement = document.querySelector("#city-search-form");
 cityElement.addEventListener("submit", searchCity);
 
 showTemperature("Moscow");
+displayForecast();

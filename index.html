@@ -26,89 +26,46 @@
           <input type="submit" value="Search" class="search-Button" />
         </form>
       </header>
-      <main>
-        <div id="motivational-phrase">
-          <strong><em>It's gonna be a good day</em></strong>
-        </div>
-        <div id="today-details-container">
+      <div id="motivational-phrase">
+        <strong><em>It's gonna be a good day</em></strong>
+      </div>
+      <div id="today-details-container">
+        <div id="forecast-emoji"></div>
+        <h1>
           <div id="forecast-emoji"></div>
-          <h1>
-            <div id="forecast-emoji"></div>
-            <span class="currentTemperature" id="currentTemperature"></span>
-            <span>°C </span>| <span><a href="#">°F</a></span>
-          </h1>
-          <div class="humidityDetails">
-            Humidity: <span id="humidity"></span><span>%, </span>
-            <span id="weatherComment"></span>
-          </div>
-          <div class="windDetails">
-            Wind: <span id="windSpeed"></span> <span>km/h</span>
-          </div>
+          <span class="currentTemperature" id="currentTemperature"></span>
+          <span>°C </span>| <span><a href="#">°F</a></span>
+        </h1>
+        <div class="humidityDetails">
+          Humidity: <span id="humidity"></span><span>%, </span>
+          <span id="weatherComment"></span>
         </div>
-        <br />
-        <div class="weather-forecast-main-section">
-          <h2 id="city"></h2>
-
-          <div class="h2-subtitle">Weather for today</div>
-          <div id="currentdate"></div>
-          <div id="hour"></div>
+        <div class="windDetails">
+          Wind: <span id="windSpeed"></span> <span>km/h</span>
         </div>
-        <hr class="breakOne" />
-        <div class="extended-forecast">
-          <h3>Extended Weather Forecast</h3>
-          <ul class="forecast">
-            <li>
-              <span class="day">Fri</span>
-              <div class="forecast-emoji">⛅</div>
-              <div>
-                <span class="maxTempertature"> <strong>36°</strong></span>
-                <span class="minTemperature">.26°</span>
-              </div>
-            </li>
-            <li>
-              <span class="day">Fri</span>
-              <div class="forecast-emoji">⛅</div>
-              <div>
-                <span class="maxTempertature"> <strong>36°</strong></span>
-                <span class="minTemperature">.26°</span>
-              </div>
-            </li>
-            <li>
-              <span class="day">Fri</span>
-              <div class="forecast-emoji">⛅</div>
-              <div>
-                <span class="maxTempertature"> <strong>36°</strong></span>
-                <span class="minTemperature">.26°</span>
-              </div>
-            </li>
-            <li>
-              <span class="day">Fri</span>
-              <div class="forecast-emoji">⛅</div>
-              <div>
-                <span class="maxTempertature"> <strong>36°</strong></span>
-                <span class="minTemperature">.26°</span>
-              </div>
-            </li>
-            <li>
-              <span class="day">Fri</span>
-              <div class="forecast-emoji">⛅</div>
-              <div>
-                <span class="maxTempertature"> <strong>36°</strong></span>
-                <span class="minTemperature">.26°</span>
-              </div>
-            </li>
-            <li>
-              <span class="day">Fri</span>
-              <div class="forecast-emoji">⛅</div>
-              <div>
-                <span class="maxTempertature"> <strong>36°</strong></span>
-                <span class="minTemperature">.26°</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </main>
+      </div>
+      <br />
+      <div class="weather-forecast-main-section">
+        <h2 id="city"></h2>
+        <div class="h2-subtitle">Weather for today</div>
+        <div id="currentdate"></div>
+        <div id="hour"></div>
+      </div>
+      <hr class="breakOne" />
+      <div class="extended-forecast">
+        <h3>Extended Weather Forecast</h3>
+      </div>
       <hr class="breakTwo" />
+      <div class="extended-forecast-container">
+        <div class="extended-forecast-row">
+          <div class="day">Fri</div>
+          <div class="forecast-icon">🌧️</div>
+          <div class="extended-forecast-temperature">
+            <span class="max-temperature"> <strong>19°</strong></span>
+            <span class="min-temperature">9°</span>
+          </div>
+        </div>
+      </div>
       <footer>
         <p>
           This project was coded by
