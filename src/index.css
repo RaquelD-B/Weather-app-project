@@ -2,29 +2,36 @@
   background-color: rgba(255, 245, 204, 0.8);
   border-radius: 10px;
   font-family: "Raleway", sans-serif;
-  max-width: 500px;
+  max-width: 400px;
   margin: 50px auto;
-  padding: 50px 10px;
+  padding: 28px 10px;
+  max-height: 505px;
 }
 .city-Input {
   border: none;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 25px;
-  width: 300px;
+  width: 205px;
   margin: 0 auto 0 10px;
   padding: 10px;
-  text-align: center;
+  text-align: left;
+  font-style: italic;
 }
 .search-Button {
-  background-color: rgba(255, 204, 0, 0.9);
+  background-color: white;
   border: none;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  width: 100px;
-  margin: 0 10px;
+  width: 89px;
+  margin: 0 10px 0 20px;
   padding: 10px;
+  cursor: pointer;
+}
+.search-Button:hover {
+  background-color: rgba(255, 204, 0, 0.9);
+  transition: all 200ms ease-in-out;
 }
 
 h1 {
@@ -61,7 +68,7 @@ form {
 .extended-forecast-wrapper {
   display: flex;
   position: relative;
-  bottom: 75px;
+  bottom: 65px;
   flex-direction: column;
 }
 
@@ -73,7 +80,13 @@ h3 {
   display: flex;
   justify-content: space-around;
 }
-
+.day {
+  text-align: center;
+}
+.extended-forecast-icon {
+  max-width: 60px;
+  max-height: 60px;
+}
 .extended-forecast-row {
   display: flex;
   flex-direction: column;

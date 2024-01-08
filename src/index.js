@@ -54,28 +54,40 @@ function searchCity(event) {
   let cityInput = document.querySelector("#city-Input");
   showTemperature(cityInput.value);
 }
+function formatedDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[date.getDay()];
+}
+function displayForecast(response) {
+  let forecastHtml = "";
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecastHtml =
+        forecastHtml +
+        `<div class="extended-forecast-row">
+          <div class="day">${formatedDay(day.time)} </div>
+          <div > <img src="${
+            day.condition.icon_url
+          }" class="extended-forecast-icon"> </div>
+          <div class="extended-forecast-temperature">
+            <span class="max-temperature"> <strong>${Math.round(
+              day.temperature.maximum
+            )}°</strong></span>
+            <span class="min-temperature">${Math.round(
+              day.temperature.minimum
+            )}°</span>
+          </div>
+        </div>`;
+    }
+  });
+  let forecastElement = document.querySelector(".extended-forecast-container");
+  forecastElement.innerHTML = forecastHtml;
+}
 function getForecast(city) {
   let apiKey = "adf0eeed55ed6d4256b9b3ft0e49cc9o";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
-}
-function displayForecast(response) {
-  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
-  let forecastHtml = "";
-  days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `<div class="extended-forecast-row">
-          <div class="day">${day} </div>
-          <div class="forecast-icon">🌧️</div>
-          <div class="extended-forecast-temperature">
-            <span class="max-temperature"> <strong>19°</strong></span>
-            <span class="min-temperature">9°</span>
-          </div>
-        </div>`;
-  });
-  let forecastElement = document.querySelector(".extended-forecast-container");
-  forecastElement.innerHTML = forecastHtml;
 }
 
 let cityElement = document.querySelector("#city-search-form");
