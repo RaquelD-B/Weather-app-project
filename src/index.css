@@ -1,5 +1,8 @@
+body {
+  background: linear-gradient(to right, lightskyblue, white);
+}
 .weatherApp {
-  background-color: rgba(255, 245, 204, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   font-family: "Raleway", sans-serif;
   max-width: 400px;
@@ -19,19 +22,19 @@
   font-style: italic;
 }
 .search-Button {
-  background-color: white;
+  background-color: #88cff7;
   border: none;
   border-radius: 10px;
   font-size: 18px;
-  font-weight: bold;
   width: 89px;
   margin: 0 10px 0 20px;
   padding: 10px;
   cursor: pointer;
 }
 .search-Button:hover {
-  background-color: rgba(255, 204, 0, 0.9);
+  background-color: rgba(16, 19, 161, 0.9);
   transition: all 200ms ease-in-out;
+  color: white;
 }
 
 h1 {
