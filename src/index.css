@@ -87,6 +87,9 @@ h3 {
   max-width: 60px;
   max-height: 60px;
 }
+.extended-forecast-temperature {
+  margin: 0 auto;
+}
 .extended-forecast-row {
   display: flex;
   flex-direction: column;
