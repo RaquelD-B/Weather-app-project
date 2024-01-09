@@ -42,7 +42,6 @@ function updateWeatherData(response) {
   currenDateElement.innerHTML = `${day}, ${month} ${date}, ${year}`;
   timeInfo.innerHTML = `${hour}:${minutes}`;
   getForecast(response.data.city);
-  displayForecast();
 }
 function showTemperature(city) {
   let apiKey = "adf0eeed55ed6d4256b9b3ft0e49cc9o";
