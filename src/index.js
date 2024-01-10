@@ -92,4 +92,4 @@ function getForecast(city) {
 let cityElement = document.querySelector("#city-search-form");
 cityElement.addEventListener("submit", searchCity);
 
-showTemperature("Moscow");
+showTemperature("Paris");

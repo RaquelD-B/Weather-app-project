@@ -1,35 +1,43 @@
 body {
-  background: linear-gradient(to right, lightskyblue, white);
+  background: linear-gradient(85deg, skyblue, white);
 }
 .weatherApp {
-  background-color: rgba(255, 255, 255, 0.3);
+  background: radial-gradient(
+    circle at center,
+    lightblue,
+    lightskyblue,
+    transparent 100%
+  );
+  border: solid;
   border-radius: 10px;
   font-family: "Raleway", sans-serif;
   max-width: 400px;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 28px 10px;
-  max-height: 505px;
+  max-height: 425px;
 }
 .city-Input {
   border: none;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 25px;
-  width: 205px;
+  width: 225px;
   margin: 0 auto 0 10px;
   padding: 10px;
   text-align: left;
-  font-style: italic;
+  font-style: inherit;
 }
 .search-Button {
-  background-color: #88cff7;
+  background: #187de9;
+  color: white;
   border: none;
   border-radius: 10px;
-  font-size: 18px;
-  width: 89px;
-  margin: 0 10px 0 20px;
-  padding: 10px;
+  font-size: 16px;
+  width: 90px;
+  margin: 0px 10px 0 0;
+  padding: 12px;
   cursor: pointer;
+  font-weight: 600;
 }
 .search-Button:hover {
   background-color: rgba(16, 19, 161, 0.9);
@@ -71,7 +79,7 @@ form {
 .extended-forecast-wrapper {
   display: flex;
   position: relative;
-  bottom: 65px;
+  bottom: 88px;
   flex-direction: column;
 }
 
@@ -99,6 +107,9 @@ h3 {
 }
 
 footer {
+  display: flex;
+  position: relative;
+  bottom: 30px;
   text-align: center;
   color: gray;
   font-size: 13px;
