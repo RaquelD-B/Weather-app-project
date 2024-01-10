@@ -12,37 +12,37 @@ body {
   border-radius: 10px;
   font-family: "Raleway", sans-serif;
   max-width: 400px;
+  max-height: 425px;
   margin: 20px auto;
   padding: 28px 10px;
-  max-height: 425px;
 }
 .city-Input {
   border: none;
   border-radius: 10px;
   font-size: 16px;
+  font-style: inherit;
   line-height: 25px;
-  width: 225px;
   margin: 0 auto 0 10px;
   padding: 10px;
   text-align: left;
-  font-style: inherit;
+  width: 225px;
 }
 .search-Button {
   background: #187de9;
-  color: white;
   border: none;
   border-radius: 10px;
-  font-size: 16px;
-  width: 90px;
-  margin: 0px 10px 0 0;
-  padding: 12px;
+  color: white;
   cursor: pointer;
   font-weight: 600;
+  margin: 0px 10px 0 0;
+  padding: 12px;
+  font-size: 16px;
+  width: 90px;
 }
 .search-Button:hover {
   background-color: rgba(16, 19, 161, 0.9);
-  transition: all 200ms ease-in-out;
   color: white;
+  transition: all 200ms ease-in-out;
 }
 
 h1 {
@@ -64,23 +64,23 @@ form {
 #forecast-icon {
   display: flex;
   position: relative;
-  width: 70px;
   top: -16px;
   right: 8px;
+  width: 70px;
 }
 
 .weather-forecast-main-section {
   display: block;
-  text-align: right;
   position: relative;
+  text-align: right;
   top: -103px;
 }
 
 .extended-forecast-wrapper {
-  display: flex;
-  position: relative;
   bottom: 88px;
+  display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 h3 {
@@ -107,10 +107,10 @@ h3 {
 }
 
 footer {
-  display: flex;
-  position: relative;
   bottom: 30px;
-  text-align: center;
   color: gray;
+  display: flex;
   font-size: 13px;
+  position: relative;
+  text-align: center;
 }
