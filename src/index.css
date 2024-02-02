@@ -115,9 +115,10 @@ footer {
   position: relative;
   text-align: center;
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .citySearch {
     max-width: 50%;
+    margin-left: 0px;
   }
   .search-Button {
     display: flex;
