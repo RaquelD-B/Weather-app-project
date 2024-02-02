@@ -34,6 +34,7 @@ body {
   color: white;
   cursor: pointer;
   font-weight: 600;
+  line-height: 19px;
   margin: 0px 10px 0 0;
   padding: 12px;
   font-size: 16px;
@@ -113,4 +114,32 @@ footer {
   font-size: 13px;
   position: relative;
   text-align: center;
+}
+@media (max-width: 700px) {
+  .citySearch {
+    max-width: 50%;
+  }
+  .search-Button {
+    display: flex;
+    position: relative;
+    bottom: 43px;
+    left: 270px;
+  }
+  #today-details-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    bottom: 60px;
+  }
+  .weather-forecast-main-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -160px;
+  }
+  .extended-forecast-wrapper {
+    display: flex;
+    position: relative;
+    top: -130px;
+  }
 }
