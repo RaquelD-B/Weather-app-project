@@ -143,4 +143,12 @@ footer {
     position: relative;
     top: -130px;
   }
+  .weatherApp {
+    margin-top: 60px;
+  }
+  footer {
+    display: flex;
+    position: relative;
+    bottom: 80px;
+  }
 }
