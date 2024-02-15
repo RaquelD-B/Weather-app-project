@@ -12,7 +12,7 @@ body {
   border-radius: 10px;
   font-family: "Raleway", sans-serif;
   max-width: 400px;
-  max-height: 425px;
+  max-height: 600px;
   margin: 20px auto;
   padding: 28px 10px;
 }
@@ -25,7 +25,7 @@ body {
   margin: 0 auto 0 10px;
   padding: 10px;
   text-align: left;
-  width: 225px;
+  width: 200px;
 }
 .search-Button {
   background: #187de9;
