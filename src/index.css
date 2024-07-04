@@ -12,9 +12,9 @@ body {
   border-radius: 10px;
   font-family: "Raleway", sans-serif;
   max-width: 400px;
-  max-height: 600px;
+  height: 450px;
   margin: 20px auto;
-  padding: 28px 10px;
+  padding: 26px 10px;
 }
 .city-Input {
   border: none;
@@ -108,10 +108,11 @@ h3 {
 }
 
 footer {
-  bottom: 30px;
+  bottom: 11px;
   color: gray;
-  display: flex;
-  font-size: 13px;
+  display: block;
+  font-size: 11px;
+  margin: 0 auto;
   position: relative;
   text-align: center;
 }
@@ -147,8 +148,6 @@ footer {
     margin-top: 60px;
   }
   footer {
-    display: flex;
-    position: relative;
-    bottom: 80px;
+    bottom: 10px;
   }
 }
